@@ -5,6 +5,10 @@ This application creates gets the latest coronavirus statistics from [here](http
 
 Currently ( & quite unfortunately) the project is windows-only
 
+# Download
+
+You can download the latest binaries from the [releases tab](https://github.com/MM-coder/coronavirus-wallpaper/releases)
+
 ## Screenshots:
 ![Homescreen](.github/wallpaper.png)
 ![GUI](.github/gui.png)
