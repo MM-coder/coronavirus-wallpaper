@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "MM-coder",
+      "name": "Mauro M.",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/22800592?v=4",
+      "profile": "https://maurom.dev",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "coronavirus-wallpaper",
+  "projectOwner": "MM-coder",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
