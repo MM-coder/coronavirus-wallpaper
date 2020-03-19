@@ -324,8 +324,7 @@ correspondence = {
    "Montgomery County, MD, US":320,
    "Suffolk County, MA, US":321,
    "Denver County, CO, US":322,
-   "Summit 
-County, CO, US":323,
+   "Summit County, CO, US":323,
    "Bergen County, NJ, US":324,
    "Harris County, TX, US":325,
    "San Francisco County, CA, US":326,
