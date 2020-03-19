@@ -15,7 +15,7 @@ menubar.add_cascade(label="File", menu=filemenu)
 
 def about():
     top = Toplevel(bg = '#081421')
-    img = ImageTk.PhotoImage(Image.open("img/mark.png"))
+    img = ImageTk.PhotoImage(Image.open(config.resource_path("img/mark.png")))
     img_panel = Label(top, image = img, bg = '#081421')
     img_panel.pack(pady=10)
     description = Label(top, text="Made to have an easy way to track\n coronavirus cases in your area", fg="white", bg="#081421")
@@ -25,7 +25,7 @@ def about():
     adress = Label(top, text="You can find me at https://maurom.dev/", fg="white", bg="#081421" )
     adress.pack()
     # Github Social
-    github = ImageTk.PhotoImage(Image.open("img/github.png").resize(size))
+    github = ImageTk.PhotoImage(Image.open(config.resource_path("img/github.png")).resize(size))
     g_icon = Label(top, image=github, bg="#081421")
     at = Label(top, text="@MM-coder", fg="white", bg="#081421" )
     g_icon.pack(side=LEFT, padx=10)
@@ -70,6 +70,6 @@ confirm = ttk.Button(w, text="Set Wallpaper", command=force_update)
 confirm.pack(padx=20)
 
 w.title("Coronavirus Wallpaper")
-w.iconbitmap(default='img/virus.ico')
+w.iconbitmap(default=config.resource_path('img/virus.ico'))
 w.config(menu=menubar)
 w.geometry("320x200")

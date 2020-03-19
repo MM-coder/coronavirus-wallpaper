@@ -5,12 +5,11 @@ from PIL import Image, ImageFilter, ImageDraw, ImageFont
 d = os.getcwd() # Get current working dir globally
 
 def set_wallpaper_from_file(filename: str):
-    full_path = os.path.join(d, filename)
-    use = os.path.normpath(full_path)
+    use = os.path.normpath(config.resource_path(filename))
     ctypes.windll.user32.SystemParametersInfoW(20, 0, use, 0)
 
 def generate_wallpaper_and_set():
-   image = Image.open('img/base.png')
+   image = Image.open(config.resource_path('img/base.png'))
    small = ImageFont.truetype('arial.ttf', 72)
    large = ImageFont.truetype('arial.ttf', 90)
    draw = ImageDraw.Draw(image)
@@ -22,5 +21,5 @@ def generate_wallpaper_and_set():
       draw.text(xy=(815,359), text=str(api.get_world_cases()[0]), fill = (255,255,255), font=large)
       draw.text(xy=(490,680), text=str(api.get_world_cases()[1]), fill = (255,255,255), font=small)
       draw.text(xy=(1265,680), text=str(api.get_world_cases()[2]), fill = (255,255,255), font=small)
-   image.save('wallpaper.png')
+   image.save(config.resource_path('wallpaper.png'))
    set_wallpaper_from_file('wallpaper.png')
