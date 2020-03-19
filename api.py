@@ -1,4 +1,4 @@
-import requests
+import COVID19Py
 
 correspondence = {
    "Thailand":0,
@@ -466,18 +466,18 @@ correspondence = {
 }
 
 def get_world_cases():
-    r = requests.get('https://coronavirus-tracker-api.herokuapp.com/v2/latest')
-    data = r.json()
-    return data['latest']['confirmed'], data['latest']['deaths'], data['latest']['recovered']
+    covid19 = COVID19Py.COVID19()
+    data = covid19.getLatest()
+    return data['confirmed'], data['deaths'], data['recovered']
 
 def get_country_id(name: str):
     formatstr = name.replace(',', '.')
     return correspondence[formatstr]
 
 def get_country_stats(c_id: int):
-    r = requests.get(f'https://coronavirus-tracker-api.herokuapp.com/v2/locations/{c_id}')
-    data = r.json()
-    return data['location']['latest']['confirmed'], data['location']['latest']['deaths'], data['location']['latest']['recovered']
+    covid19 = COVID19Py.COVID19()
+    data = covid19.getLocationById(c_id)
+    return data['latest']['confirmed'], data['latest']['deaths'], data['latest']['recovered']
 
 def get_country_list():
     l = ["World"]
