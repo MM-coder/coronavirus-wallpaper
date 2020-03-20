@@ -16,6 +16,30 @@ You can download the latest binaries from the [releases tab](https://github.com/
 ![Homescreen](.github/wallpaper.png)
 ![GUI](.github/gui.png)
 
+## Developing
+#### Requirements:
+python3.8
+git
+
+```
+git clone https://github.com/MM-coder/coronavirus-wallpaper.git
+cd coronavirus-wallpaper
+py main.py
+```
+
+## Building
+#### Requirements:
+python3.8
+git
+pyinstaller
+
+```
+git clone https://github.com/MM-coder/coronavirus-wallpaper.git
+cd coronavirus-wallpaper
+pyinstaller --onefile --add-data "./img";"img" -i img/virus.ico main.py
+```
+
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):

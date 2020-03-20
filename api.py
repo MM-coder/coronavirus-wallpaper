@@ -471,8 +471,7 @@ def get_world_cases():
     return data['latest']['confirmed'], data['latest']['deaths'], data['latest']['recovered']
 
 def get_country_id(name: str):
-    formatstr = name.replace(',', '.')
-    return correspondence[formatstr]
+    return correspondence[name]
 
 def get_country_stats(c_id: int):
     r = requests.get(f'https://coronavirus-tracker-api.herokuapp.com/v2/locations/{c_id}')
