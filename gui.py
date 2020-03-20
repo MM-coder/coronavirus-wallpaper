@@ -1,6 +1,10 @@
-import tkinter, api, config, wallpaper
+import tkinter
+import api
+import gui 
+import config
+import wallpaper
 from tkinter import ttk
-from tkinter import *
+from tkinter import Label, Menu, LEFT, StringVar, Toplevel
 from tkinter.messagebox import showinfo
 from PIL import ImageTk, Image
 
