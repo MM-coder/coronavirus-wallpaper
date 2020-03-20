@@ -1,4 +1,7 @@
-import api, wallpaper, gui, time
+import api
+import wallpaper
+import gui
+import time
 
 
 def background():

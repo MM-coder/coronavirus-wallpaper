@@ -1,5 +1,8 @@
-import os, ctypes
-import PIL, api, config
+import os
+import ctypes
+import PIL
+import api
+import config
 from PIL import Image, ImageFilter, ImageDraw, ImageFont
 
 d = os.getcwd() # Get current working dir globally
