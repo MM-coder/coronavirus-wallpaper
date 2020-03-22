@@ -1,7 +1,7 @@
 ![Project Logo](.github/logo.png)
 
 
-![GitHub stars](https://img.shields.io/github/stars/MM-coder/coronavirus-wallpaper?style=flat-square)[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-) [![CodeFactor](https://www.codefactor.io/repository/github/mm-coder/coronavirus-wallpaper/badge)](https://www.codefactor.io/repository/github/mm-coder/coronavirus-wallpaper)
+![GitHub stars](https://img.shields.io/github/stars/MM-coder/coronavirus-wallpaper?style=flat-square) [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-) [![CodeFactor](https://www.codefactor.io/repository/github/mm-coder/coronavirus-wallpaper/badge)](https://www.codefactor.io/repository/github/mm-coder/coronavirus-wallpaper)
 # Coronavirus Wallpaper
 
 This application creates gets the latest coronavirus statistics from [here](https://github.com/ExpDev07/coronavirus-tracker-api) and updates your wallpaper with them.
