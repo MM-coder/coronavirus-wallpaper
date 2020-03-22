@@ -1,7 +1,7 @@
 ![Project Logo](.github/logo.png)
 
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-) [![CodeFactor](https://www.codefactor.io/repository/github/mm-coder/coronavirus-wallpaper/badge)](https://www.codefactor.io/repository/github/mm-coder/coronavirus-wallpaper)
+![GitHub stars](https://img.shields.io/github/stars/MM-coder/coronavirus-wallpaper?style=flat-square)[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-) [![CodeFactor](https://www.codefactor.io/repository/github/mm-coder/coronavirus-wallpaper/badge)](https://www.codefactor.io/repository/github/mm-coder/coronavirus-wallpaper)
 # Coronavirus Wallpaper
 
 This application creates gets the latest coronavirus statistics from [here](https://github.com/ExpDev07/coronavirus-tracker-api) and updates your wallpaper with them.
@@ -60,3 +60,11 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+## License
+
+![License Badge](https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-nc-nd.svg)
+
+The aforementioned code is protected and released to the public under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) License which can be viewed in license.md or on the Creative Commons website (https://creativecommons.org/licenses/by-nc-nd/4.0/). Any failure to comply with the terms designated in the license will be met with swift judicial action by the author.
+
+By downloading, executing or otherwise transferring the code by any means you are legally bound to the terms stipulated in the license
