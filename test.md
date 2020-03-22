@@ -1,0 +1,1 @@
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/MM-coder/coronavirus-wallpaper?style=flat-square)](https://www.codefactor.io/repository/github/mm-coder/coronavirus-wallpaper)
