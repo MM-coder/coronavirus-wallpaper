@@ -466,7 +466,7 @@ correspondence = {
 }
 
 def get_world_cases():
-    covid19 = COVID19Py.COVID19()
+    covid19 = COVID19Py.COVID19(source='jhu')
     data = covid19.getLatest()
     return data['confirmed'], data['deaths'], data['recovered']
 
