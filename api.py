@@ -466,7 +466,7 @@ correspondence = {
 }
 
 def get_world_cases():
-    covid19 = COVID19Py.COVID19(source='jhu')
+    covid19 = COVID19Py.COVID19(url="https://cvtapi.nl")
     data = covid19.getLatest()
     return data['confirmed'], data['deaths'], data['recovered']
 
@@ -474,7 +474,7 @@ def get_country_id(name: str):
     return correspondence[name]
 
 def get_country_stats(c_id: int):
-    covid19 = COVID19Py.COVID19()
+    covid19 = COVID19Py.COVID19(url="https://cvtapi.nl")
     data = covid19.getLocationById(c_id)
     return data['latest']['confirmed'], data['latest']['deaths'], data['latest']['recovered']
 

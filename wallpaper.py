@@ -3,6 +3,7 @@ import ctypes
 import PIL
 import api
 import config
+from time import gmtime, strftime
 from PIL import Image, ImageFilter, ImageDraw, ImageFont
 
 d = os.getcwd() # Get current working dir globally
@@ -24,5 +25,6 @@ def generate_wallpaper_and_set():
       draw.text(xy=(815,359), text=str(api.get_world_cases()[0]), fill = (255,255,255), font=large)
       draw.text(xy=(490,680), text=str(api.get_world_cases()[1]), fill = (255,255,255), font=small)
       draw.text(xy=(1265,680), text=str(api.get_world_cases()[2]), fill = (255,255,255), font=small)
+      draw.text(xy=(877,680), text=strftime("%d-%m\n%H:%M", gmtime()), fill = (255,255,255), font=small)
    image.save(config.resource_path('wallpaper.png'))
    set_wallpaper_from_file('wallpaper.png')
