@@ -5,11 +5,10 @@ import time
 
 
 def background():
-    while 1: 
-        wallpaper.generate_wallpaper_and_set()
-        time.sleep(5)
+    wallpaper.generate_wallpaper_and_set()
+    gui.w.after(5000, background)
 
 
 if __name__ == '__main__':
+    gui.w.after(5000, background)
     gui.w.mainloop()
-    background()
